@@ -12,8 +12,17 @@ def main():
         for di, d in enumerate(p.get_devices()):
             d_name = d.get_info(cl.device_info.NAME)
             d_type = cl.device_type.to_string(d.get_info(cl.device_info.TYPE))
-            d_ver = d.get_info(cl.device_info.VERSION).strip()
-            print('  |- [{}:{}] {} / {} / {}'.format(pi, di, d_type, d_ver, d_name))
+            print('|- [{}:{}] {} / {}'.format(pi, di, d_type, d_name))
+
+            # Show local memory size.
+            d_lmsz = d.get_info(cl.device_info.LOCAL_MEM_SIZE)
+            print('   |- Local Memory Size: {}KB'.format(d_lmsz >> 10))
+
+            # List extensions.
+            print('   |- Extensions: ')
+            d_exts = d.get_info(cl.device_info.EXTENSIONS).strip().split(' ')
+            for ext in d_exts:
+                print('      |- {}'.format(ext))
 
 if __name__ == '__main__':
     main()
