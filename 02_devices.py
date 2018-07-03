@@ -10,7 +10,8 @@ def main():
 
         # List devices.
         for di, d in enumerate(p.get_devices()):
-            d_name = d.get_info(cl.device_info.NAME)
+            # CPU name appear redundant space characters on Windows.
+            d_name = d.get_info(cl.device_info.NAME).strip()
             d_type = cl.device_type.to_string(d.get_info(cl.device_info.TYPE))
             print('|- [{}:{}] {} / {}'.format(pi, di, d_type, d_name))
 
