@@ -56,7 +56,8 @@ def cl_merge_sort_sbs(data_in):
     }
     '''
 
-    ctx = cl.Context(dev_type=cl.device_type.GPU)
+    plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
+    ctx = cl.Context(dev_type=cl.device_type.GPU, properties=plf)
     prg = cl.Program(ctx, CL_CODE).build()
     queue = cl.CommandQueue(ctx)
     mf = cl.mem_flags
