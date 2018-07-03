@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pyopencl as cl
 
@@ -6,17 +7,20 @@ def main():
     LOCAL_GROUP = 2
 
     CL_CODE = '''
-    kernel void foo(void) {
+    kernel void hello(void) {
       int gid = get_global_id(0);
       int lid = get_local_id(0);
       printf("Hello World! [%d:%d]\\n", gid, lid);
     }
     '''
 
-    ctx = cl.Context(dev_type=cl.device_type.GPU)
+    os.environ['PYOPENCL_COMPILER_OUTPUT'] = '1'
+
+    plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
+    ctx = cl.Context(dev_type=cl.device_type.GPU, properties=plf)
     prg = cl.Program(ctx, CL_CODE).build()
     queue = cl.CommandQueue(ctx)
-    prg.foo(queue, (GLOBAL_GROUP,), (LOCAL_GROUP,))
+    prg.hello(queue, (GLOBAL_GROUP,), (LOCAL_GROUP,))
     queue.finish()
 
 if __name__ == '__main__':
