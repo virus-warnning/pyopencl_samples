@@ -44,6 +44,8 @@ Windows 10 | 1.2 | HD Graphics 2500
 macOS 10.13.3 | 1.2 | Core i7 3667U
 macOS 10.13.3 | 1.2 | HD Graphics 4000
 
+If you'd like to share test result on device not listed here, just give me a PR. 
+
 # References
 
 * [List of Intel graphics processing units - Seventh generation](https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units#Seventh_generation)
