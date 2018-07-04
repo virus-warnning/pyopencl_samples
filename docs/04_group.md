@@ -66,3 +66,8 @@ global_id=3, local_id=3, group_id=0
 global_id=4, local_id=4, group_id=0
 global_id=5, local_id=5, group_id=0
 ```
+
+### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
+
+```
+```
