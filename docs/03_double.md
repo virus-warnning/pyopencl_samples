@@ -17,4 +17,8 @@ Results of GPU: [2. 3. 4.]
 ### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
 
 ```
+Increase each items in array: [1. 2. 3.]
+Results of CPU: [2. 3. 4.]
+Cannot use double.
+Results of GPU: [0. 0. 0.]
 ```
