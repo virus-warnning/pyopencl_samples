@@ -1,4 +1,4 @@
-[Home](../README.md)
+[Home](../)
 
 # About 01_devices.py
 
