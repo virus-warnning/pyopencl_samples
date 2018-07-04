@@ -4,7 +4,14 @@
 
  N | Description
 ---- | ----
-1 | Print "Hello World!" in CL Language.
+1 | List OpenCL devices.
+2 | Print "Hello World!" in CL Language.
+3 | Check whether the device support double.
+4 | Work group.
+5 | Synchronize work items in a work group.
+6 | Do a merge sort and print it's progress.
+7 | Compare merge sort by GPU, by GPU and Python built-in sorted().
+8 | Convert a PNG to gray level.
 
 ## Requirements
 
