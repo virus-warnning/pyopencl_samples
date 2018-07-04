@@ -1,4 +1,4 @@
-[Home](../)
+[Home](../../../)
 
 # About 01_devices.py
 
