@@ -8,7 +8,7 @@ def main():
         int lid = get_local_id(0);
 
         if (lid % 2 == 1) {
-            for (int n = 0; n < 1000; n++) {
+            for (int n = 0; n < 100 * lid; n++) {
                 printf("\\r");
             }
         }
@@ -20,7 +20,7 @@ def main():
 
         if (lid == 0) {
             int sum = 0;
-            for (int i=4; i>=0; i--) {
+            for (int i=0; i<5; i++) {
                 printf("temp[%d]=%d\\n", i, temp[i]);
                 sum += temp[i];
             }
@@ -31,7 +31,8 @@ def main():
 
     os.environ['PYOPENCL_COMPILER_OUTPUT'] = '1'
 
-    ctx = cl.Context(dev_type=cl.device_type.GPU)
+    plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
+    ctx = cl.Context(dev_type=cl.device_type.CPU, properties=plf)
     prg = cl.Program(ctx, CL_CODE).build()
     queue = cl.CommandQueue(ctx)
 

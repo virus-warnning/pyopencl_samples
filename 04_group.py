@@ -1,9 +1,10 @@
+import os
 import numpy as np
 import pyopencl as cl
 
 def group_test(dev_type, gw_size, lw_size):
     CL_CODE = '''
-    kernel void test(void) {
+    kernel void group_test(void) {
         int glb = get_global_id(0);
         int loc = get_local_id(0);
         int grp = get_group_id(0);
@@ -15,7 +16,10 @@ def group_test(dev_type, gw_size, lw_size):
     lw_name = 'undefined' if lw_size == 0 else lw_size
     print('===== (device: {}, global work size: {}, local work size: {}) ====='.format(type_name, gw_size, lw_name))
 
-    ctx = cl.Context(dev_type=dev_type)
+    os.environ['PYOPENCL_COMPILER_OUTPUT'] = '1'
+
+    plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
+    ctx = cl.Context(dev_type=dev_type, properties=plf)
     prg = cl.Program(ctx, CL_CODE).build()
     queue = cl.CommandQueue(ctx)
 
@@ -26,7 +30,7 @@ def group_test(dev_type, gw_size, lw_size):
         LOCAL_SIZE = None
 
     try:
-        prg.test(queue, GLOBAL_SIZE, LOCAL_SIZE)
+        prg.group_test(queue, GLOBAL_SIZE, LOCAL_SIZE)
     except cl.cffi_cl.LogicError as ex:
         print(ex)
     finally:
