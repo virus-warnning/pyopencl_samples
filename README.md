@@ -20,7 +20,9 @@
 * Make sure CPU or GPU driver installed.
 * Download [Python 3.7 x86-64 executable installer](https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe).
 * Download **pyopencl‑2018.1.1+cl12‑cp37‑cp37m‑win_amd64.whl** from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyopencl).
-* Install Python 3.7 x86-64.
+* Run Python 3.7 Installer.
+* Check "Add Python 3.7 to PATH".
+* Install Python 3.7.
 * python -m pip install numpy pillow
 * python -m pip install pyopencl‑2018.1.1+cl12‑cp37‑cp37m‑win_amd64.whl
 
