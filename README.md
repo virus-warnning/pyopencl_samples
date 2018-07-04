@@ -37,12 +37,9 @@ If your CPU is Intel Core 6th gen or newer, use **pyopencl‑2018.1.1+cl21‑cp3
 
 OS | OpenCL | Device
 ---- | ---- | ----
-Windows 10 | 2.1 | Core i5 7200U
-Windows 10 | 2.1 | HD Graphics 620
-Windows 10 | 1.2 | Core i5 3470
-Windows 10 | 1.2 | HD Graphics 2500
-macOS 10.13.3 | 1.2 | Core i7 3667U
-macOS 10.13.3 | 1.2 | HD Graphics 4000
+Windows 10 | 2.1 | Intel Core i5 7200U + HD Graphics 620
+Windows 10 | 1.2 | IntelCore i5 3470 + HD Graphics 2500
+macOS 10.13.3 | 1.2 | Intel Core i7 3667U + HD Graphics 4000
 
 If you'd like to share test result on device not listed here, just give me a PR. 
 
