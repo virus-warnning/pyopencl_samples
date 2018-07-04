@@ -3,14 +3,12 @@ import numpy as np
 import pyopencl as cl
 
 def main():
-    GLOBAL_GROUP = 6
-    LOCAL_GROUP = 2
+    GLOBAL_WORK_SIZE = 5
 
     CL_CODE = '''
     kernel void hello(void) {
       int gid = get_global_id(0);
-      int lid = get_local_id(0);
-      printf("Hello World! [%d:%d]\\n", gid, lid);
+      printf("Hello! I'm work item #%d.\\n", gid);
     }
     '''
 
@@ -20,7 +18,8 @@ def main():
     ctx = cl.Context(dev_type=cl.device_type.GPU, properties=plf)
     prg = cl.Program(ctx, CL_CODE).build()
     queue = cl.CommandQueue(ctx)
-    prg.hello(queue, (GLOBAL_GROUP,), (LOCAL_GROUP,))
+
+    prg.hello(queue, (GLOBAL_WORK_SIZE,), None)
     queue.finish()
 
 if __name__ == '__main__':
