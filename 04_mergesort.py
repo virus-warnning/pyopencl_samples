@@ -52,7 +52,8 @@ def cl_merge_sort(data_in, dev_type):
     }
     '''
 
-    ctx = cl.Context(dev_type=dev_type)
+    plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
+    ctx = cl.Context(dev_type=dev_type, properties=plf)
     prg = cl.Program(ctx, CL_CODE).build()
     queue = cl.CommandQueue(ctx)
     mf = cl.mem_flags

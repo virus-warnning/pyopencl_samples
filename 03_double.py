@@ -14,15 +14,24 @@ import pyopencl as cl
 
 def cl_inc_doubles(dev_type, data):
     CL_CODE = '''
-    #pragma OPENCL EXTENSION cl_khr_fp64 : enable
+    #ifdef cl_khr_fp64
     kernel void inc_doubles(global const double* data, global double* results) {
       int gid = get_global_id(0);
       results[gid] = data[gid] + 1.0;
     }
+    #else
+    kernel void inc_doubles(global const void* data, global void* results) {
+      int gid = get_global_id(0);
+      if (gid==0) {
+        printf("Cannot use double.\\n");
+      }
+    }
+    #endif
     '''
 
     # Build kernel on CPU or GPU
-    ctx = cl.Context(dev_type=dev_type)
+    plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
+    ctx = cl.Context(dev_type=dev_type, properties=plf)
     prg = cl.Program(ctx, CL_CODE).build()
 
     # Allocate memories.
