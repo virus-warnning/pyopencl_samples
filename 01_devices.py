@@ -10,14 +10,18 @@ def main():
 
         # List devices.
         for di, d in enumerate(p.get_devices()):
-            # CPU name appear redundant space characters on Windows.
+            # CPU name of Intel Core 3th gen may appear redundant spaces on Windows.
             d_name = d.get_info(cl.device_info.NAME).strip()
             d_type = cl.device_type.to_string(d.get_info(cl.device_info.TYPE))
             print('|- [{}:{}] {} / {}'.format(pi, di, d_type, d_name))
 
-            # Show local memory size.
+            # Show primary informations.
+            d_cu   = d.get_info(cl.device_info.MAX_COMPUTE_UNITS)
+            print('   |- Max Compute Units: {}'.format(d_cu))
+            d_gmsz = d.get_info(cl.device_info.GLOBAL_MEM_SIZE)
+            print('   |- Max Global Memory Size: {}MB'.format(d_gmsz >> 20))
             d_lmsz = d.get_info(cl.device_info.LOCAL_MEM_SIZE)
-            print('   |- Local Memory Size: {}KB'.format(d_lmsz >> 10))
+            print('   |- Max Local Memory Size: {}KB'.format(d_lmsz >> 10))
 
             # List extensions.
             print('   |- Extensions: ')
