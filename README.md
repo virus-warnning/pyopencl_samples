@@ -41,5 +41,9 @@ macOS 10.13.3 | 1.2 | HD Graphics 4000
 
 # References
 
-* [Mac computers that use OpenCL and OpenGL graphics](https://support.apple.com/en-us/HT202823).
+* [List of Intel graphics processing units - Seventh generation](https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units#Seventh_generation)
+* [List of AMD graphics processing units - API Overview](https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units#API_Overview)
+* [List of NVIDIA graphics processing units - GeForce 10 Series](https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units#GeForce_10_series)
+* [Mac computers that use OpenCL and OpenGL graphics](https://support.apple.com/en-us/HT202823)
 * [OpenCL™ Drivers and Runtimes for Intel® Architecture](https://software.intel.com/en-us/articles/opencl-drivers)
+* [AMD OpenCL™ 2.0 Driver](https://support.amd.com/en-us/kb-articles/Pages/OpenCL2-Driver.aspx)
