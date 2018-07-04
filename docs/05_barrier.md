@@ -18,4 +18,8 @@ sum[0..100]=4950
 ### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
 
 ```
+===== Run without barrier =====
+sum[0..100]=496
+===== Run with barrier =====
+sum[0..100]=4950
 ```
