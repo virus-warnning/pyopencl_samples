@@ -2,16 +2,16 @@
 
 ## Overview
 
- N | Description
----- | ----
-1 | List OpenCL devices.
-2 | Print "Hello World!" in CL language.
-3 | Examine whether the device support double precision.
-4 | Work group.
-5 | Synchronize work items in a work group.
-6 | Do a merge sort and print it's progress.
-7 | Compare merge sort by GPU, by GPU and Python built-in sorted().
-8 | Convert a PNG to gray level.
+ N | Description | Detail
+---- | ---- | ----
+1 | List OpenCL devices. | [View](docs/01_devices.md)
+2 | Print "Hello World!" in CL language. | [View](docs/02_hello.md)
+3 | Examine whether the device support double precision. | [View](docs/03_double.md)
+4 | Work group. | [View](docs/04_group.md)
+5 | Synchronize work items in a work group. | [View](docs/05_barrier.md)
+6 | Do a merge sort and print it's progress. |
+7 | Compare merge sort by GPU, by GPU and Python built-in sorted(). |
+8 | Convert a PNG to gray level. |
 
 ## Requirements
 
