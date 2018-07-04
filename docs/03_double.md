@@ -1,0 +1,15 @@
+[Home](../../../#overview)
+
+# About 03_double.py
+
+## Output
+
+### Win 10 / Intel Core 7th Gen
+
+```
+Increase each items in array: [1. 2. 3.]
+C:\Users\sparrow\AppData\Local\Programs\Python\Python37\lib\site-packages\pyopencl\cffi_cl.py:1521: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+  "to see more.", CompilerWarning)
+Results of CPU: [2. 3. 4.]
+Results of GPU: [2. 3. 4.]
+```
