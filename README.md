@@ -16,8 +16,17 @@
 ## Requirements
 
 ### Windows
+* Download [Python 3.7 x86-64 executable installer](https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe).
+* Download [pyopencl‑2018.1.1+cl12‑cp37‑cp37m‑win_amd64.whl](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyopencl).
+* Install Python 3.7 x86-64.
+* python -m pip install numpy pillow
+* python -m pip install pyopencl‑2018.1.1+cl12‑cp37‑cp37m‑win_amd64.whl
 
-### Mac OSX
+If your CPU is Intel Core gen 6 or newer, use pyopencl‑2018.1.1+cl21‑cp37‑cp37m‑win_amd64.whl instead.
+
+### macOS
+* brew install python3
+* pip3 install pyopencl pillow
 
 ## Tested Environments
 
