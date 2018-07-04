@@ -15,3 +15,8 @@ Hello! I'm work item #2.
 Hello! I'm work item #3.
 Hello! I'm work item #4.
 ```
+
+### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
+
+```
+```
