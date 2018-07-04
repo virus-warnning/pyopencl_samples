@@ -24,7 +24,7 @@
 * python -m pip install numpy pillow
 * python -m pip install pyopencl‑2018.1.1+cl12‑cp37‑cp37m‑win_amd64.whl
 
-If your CPU is Intel Core 6th gen or newer, use pyopencl‑2018.1.1+cl21‑cp37‑cp37m‑win_amd64.whl instead.
+If your CPU is Intel Core 6th gen or newer, use **pyopencl‑2018.1.1+cl21‑cp37‑cp37m‑win_amd64.whl** instead.
 
 ### macOS
 
