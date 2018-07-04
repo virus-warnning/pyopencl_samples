@@ -4,7 +4,7 @@
 
 ## Output
 
-### Win 10 / Intel Core 7th Gen
+### Win10 / Intel Core i5 7200U + HD Graphics 620
 
 ```
 Increase each items in array: [1. 2. 3.]
