@@ -4,7 +4,7 @@
 
 ## Output
 
-### Win 10 / Intel Core 7th Gen
+### Win10 / Intel Core i5 7200U + HD Graphics 620
 
 ```
 ===== (device: GPU, global work size: 6, local work size: undefined) =====
