@@ -1,4 +1,3 @@
-import os
 import numpy as np
 import pyopencl as cl
 
@@ -11,8 +10,6 @@ def main():
       printf("Hello! I'm work item #%d.\\n", gid);
     }
     '''
-
-    os.environ['PYOPENCL_COMPILER_OUTPUT'] = '1'
 
     plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
     ctx = cl.Context(dev_type=cl.device_type.GPU, properties=plf)

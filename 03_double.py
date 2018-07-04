@@ -1,14 +1,3 @@
-# A precision test for 64-bits floating point value.
-#
-# It's the output on Intel i7 3667U + HD Graphics 4000.
-# The GPU doesn't support 64-bits floating point value.
-#
-#   Increase each items in array: [1. 2. 3.]
-#   Results of CPU: [2. 3. 4.]
-#   Results of GPU: [2.40000038e+001 5.26354425e-315 0.00000000e+000]
-#
-# See: https://stackoverflow.com/questions/11176990/opencl-floating-point-precision
-
 import numpy as np
 import pyopencl as cl
 
