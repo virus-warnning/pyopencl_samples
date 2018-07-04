@@ -1,6 +1,10 @@
-# Output
+[Home](../README.md)
 
-## Win10 / Intel Core 7th gen
+# About 01_devices.py
+
+## Output
+
+### Win10 / Intel Core 7th gen
 
 ```
 [0] Intel(R) OpenCL / OpenCL 2.1
