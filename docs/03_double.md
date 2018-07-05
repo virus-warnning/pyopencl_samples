@@ -2,6 +2,14 @@
 
 # About 03_double.py
 
+## Known Issus
+
+Intel HD Graphics 3rd gen doesn't have cl_khr_fp64 extension, so type **double** isn't available.
+
+(driver 10.18.10.4885 2017-12-11)
+
+Intel HD Graphics 7th gen has this extension, but 4th ~ 6th were not tested.
+
 ## Output
 
 ### Win10 / Intel Core i5 7200U + HD Graphics 620
