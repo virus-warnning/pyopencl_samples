@@ -16,6 +16,10 @@ Hello! I'm work item #3.
 Hello! I'm work item #4.
 ```
 
+### Win10 / Intel Core i5 3470 + HD Graphics 2500
+
+The same as i5 7200U.
+
 ### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
 
 ```
