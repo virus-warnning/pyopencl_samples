@@ -52,3 +52,4 @@ If you'd like to share test result on device not listed here, just edit *.md fil
 * [OpenCL™ Drivers and Runtimes for Intel® Architecture](https://software.intel.com/en-us/articles/opencl-drivers)
 * [AMD OpenCL™ 2.0 Driver](https://support.amd.com/en-us/kb-articles/Pages/OpenCL2-Driver.aspx)
 * [Apple Deprecates Support for OpenGL & OpenCL Libraries at Mojave Announcement](https://appuals.com/apple-deprecates-support-for-opengl-opencl-libraries-at-mojave-announcement/)
+* [Enabling OpenCL support for GPGPU in Kernel-based Virtual Machine](https://people.cs.nctu.edu.tw/~ypyou/spe2166.pdf)
