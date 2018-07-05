@@ -15,6 +15,10 @@ sum[0..100]=120
 sum[0..100]=4950
 ```
 
+### Win10 / Intel Core i5 3470 + HD Graphics 2500
+
+The same as i5 7200U.
+
 ### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
 
 ```
