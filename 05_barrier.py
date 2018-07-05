@@ -1,7 +1,7 @@
 import numpy as np
 import pyopencl as cl
 
-def main():
+def barrier_test(dev_type):
     CL_CODE = '''
     kernel void barrier_test(local int* temp, int with_barrier) {
         int lid = get_local_id(0);
@@ -30,18 +30,32 @@ def main():
     '''
 
     plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
-    ctx = cl.Context(dev_type=cl.device_type.GPU, properties=plf)
+    ctx = cl.Context(dev_type=dev_type, properties=plf)
     prg = cl.Program(ctx, CL_CODE).build()
     queue = cl.CommandQueue(ctx)
 
     ITEM_COUNT = 100
     temp = cl.LocalMemory(ITEM_COUNT * 4)
-    print('===== Run without barrier =====')
-    prg.barrier_test(queue, (ITEM_COUNT,), (ITEM_COUNT,), temp, np.int32(0))
-    queue.finish()
-    print('===== Run with barrier =====')
-    prg.barrier_test(queue, (ITEM_COUNT,), (ITEM_COUNT,), temp, np.int32(1))
-    queue.finish()
+    print('* Run without barrier:')
+    try:
+        prg.barrier_test(queue, (ITEM_COUNT,), (ITEM_COUNT,), temp, np.int32(0))
+    except cl.cffi_cl.LogicError as ex:
+        print(ex)
+    finally:
+        queue.finish()
+    print('* Run with barrier:')
+    try:
+        prg.barrier_test(queue, (ITEM_COUNT,), (ITEM_COUNT,), temp, np.int32(1))
+    except cl.cffi_cl.LogicError as ex:
+        print(ex)
+    finally:
+        queue.finish()
+
+def main():
+    print('=== Test GPU ===')
+    barrier_test(cl.device_type.GPU)
+    print('=== Test CPU ===')
+    barrier_test(cl.device_type.CPU)
 
 if __name__ == '__main__':
     main()
