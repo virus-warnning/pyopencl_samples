@@ -22,8 +22,14 @@ The same as i5 7200U.
 ### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
 
 ```
-===== Run without barrier =====
+=== Test GPU ===
+* Run without barrier:
 sum[0..100]=496
-===== Run with barrier =====
+* Run with barrier:
 sum[0..100]=4950
+=== Test CPU ===
+* Run without barrier:
+clEnqueueNDRangeKernel failed: INVALID_WORK_GROUP_SIZE
+* Run with barrier:
+clEnqueueNDRangeKernel failed: INVALID_WORK_GROUP_SIZE
 ```
