@@ -51,3 +51,4 @@ If you'd like to share test result on device not listed here, just edit *.md fil
 * [Mac computers that use OpenCL and OpenGL graphics](https://support.apple.com/en-us/HT202823)
 * [OpenCL™ Drivers and Runtimes for Intel® Architecture](https://software.intel.com/en-us/articles/opencl-drivers)
 * [AMD OpenCL™ 2.0 Driver](https://support.amd.com/en-us/kb-articles/Pages/OpenCL2-Driver.aspx)
+* [Apple Deprecates Support for OpenGL & OpenCL Libraries at Mojave Announcement](https://appuals.com/apple-deprecates-support-for-opengl-opencl-libraries-at-mojave-announcement/)
