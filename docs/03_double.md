@@ -6,11 +6,11 @@
 
 ### Intel HD Graphics 3rd gen doesn't have cl_khr_fp64 extension.
 
-Intel HD Graphics 3rd gen doesn't have cl_khr_fp64 extension, so type **double** isn't available.
+Intel HD Graphics 3rd ~ 5h gen doesn't have cl_khr_fp64 extension, so type **double** isn't available.
 
 (driver 10.18.10.4885 2017-12-11)
 
-Intel HD Graphics 7th gen has this extension, but 4th ~ 6th were not tested.
+Intel HD Graphics 7th gen has this extension, however 6th was not tested.
 
 ## Output
 
