@@ -14,6 +14,12 @@ d.get_info(cl.device_info.NAME)
 "        Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz"
 ```
 
+Do strip() for device name is better.
+
+```python
+d.get_info(cl.device_info.NAME).strip()
+```
+
 ## Output
 
 ### Win10 / Intel Core i5 7200U + HD Graphics 620
@@ -83,6 +89,56 @@ d.get_info(cl.device_info.NAME)
       |- cl_khr_gl_sharing
       |- cl_khr_fp64
       |- cl_khr_image2d_from_buffer
+```
+
+### Win10 / Intel Core i5 3470 + HD Graphics 2500
+
+```
+[0] Intel(R) OpenCL / OpenCL 1.2
+|- [0:0] CPU / Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+   |- Max Compute Units: 4
+   |- Max Global Memory Size: 16064MB
+   |- Max Local Memory Size: 32KB
+   |- Extensions:
+      |- cl_khr_fp64
+      |- cl_khr_icd
+      |- cl_khr_global_int32_base_atomics
+      |- cl_khr_global_int32_extended_atomics
+      |- cl_khr_local_int32_base_atomics
+      |- cl_khr_local_int32_extended_atomics
+      |- cl_khr_byte_addressable_store
+      |- cl_intel_printf
+      |- cl_ext_device_fission
+      |- cl_intel_exec_by_local_thread
+      |- cl_khr_gl_sharing
+      |- cl_intel_dx9_media_sharing
+      |- cl_khr_dx9_media_sharing
+      |- cl_khr_d3d11_sharing
+|- [0:1] GPU / Intel(R) HD Graphics 2500
+   |- Max Compute Units: 6
+   |- Max Global Memory Size: 1246MB
+   |- Max Local Memory Size: 64KB
+   |- Extensions:
+      |- cl_intel_d3d11_nv12_media_sharing
+      |- cl_intel_dx9_media_sharing
+      |- cl_khr_3d_image_writes
+      |- cl_khr_byte_addressable_store
+      |- cl_khr_d3d10_sharing
+      |- cl_khr_d3d11_sharing
+      |- cl_khr_depth_images
+      |- cl_khr_dx9_media_sharing
+      |- cl_khr_gl_depth_images
+      |- cl_khr_gl_event
+      |- cl_khr_gl_msaa_sharing
+      |- cl_khr_gl_sharing
+      |- cl_khr_global_int32_base_atomics
+      |- cl_khr_global_int32_extended_atomics
+      |- cl_khr_icd
+      |- cl_khr_image2d_from_buffer
+      |- cl_khr_local_int32_base_atomics
+      |- cl_khr_local_int32_extended_atomics
+      |- cl_intel_accelerator
+      |- cl_intel_motion_estimation
 ```
 
 ### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
