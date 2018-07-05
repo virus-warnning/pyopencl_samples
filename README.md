@@ -10,7 +10,7 @@
 4 | Work group. | [View](docs/04_group.md)
 5 | Synchronize work items in a work group. | [View](docs/05_barrier.md)
 6 | Do a merge sort and print it's progress. |
-7 | Compare merge sort by GPU, by GPU and Python built-in sorted(). |
+7 | Compare merge sort by CPU, merge sort by GPU and Python built-in sorted(). |
 8 | Convert a PNG to gray level. |
 
 ## Requirements
