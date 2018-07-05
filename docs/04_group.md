@@ -8,7 +8,7 @@
 
 ```
 ===== (device: GPU, global work size: 6, local work size: undefined) =====
-C:\Users\sparrow\AppData\Local\Programs\Python\Python37\lib\site-packages\pyopencl\cffi_cl.py:1521: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+... Python\Python37\lib\site-packages\pyopencl\cffi_cl.py:1521: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
   "to see more.", CompilerWarning)
 global_id=0, local_id=0, group_id=0
 global_id=1, local_id=1, group_id=0
