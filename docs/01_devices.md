@@ -2,6 +2,12 @@
 
 # About 01_devices.py
 
+## Known Issue
+
+```python
+d.get_info(cl.device_info.NAME)
+```
+
 ## Output
 
 ### Win10 / Intel Core i5 7200U + HD Graphics 620
