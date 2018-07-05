@@ -191,3 +191,55 @@ d.get_info(cl.device_info.NAME).strip()
       |- cl_khr_depth_images
       |- cl_khr_3d_image_writes
 ```
+
+### macOS 10.13.3 / Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz + Intel(R) Iris(TM) Graphics 6100
+
+```
+[0] Apple / OpenCL 1.2 (Oct 31 2017 18:30:00)
+|- [0:0] CPU / Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz
+   |- Max Compute Units: 4
+   |- Max Global Memory Size: 8192MB
+   |- Max Local Memory Size: 32KB
+   |- Extensions:
+      |- cl_APPLE_SetMemObjectDestructor
+      |- cl_APPLE_ContextLoggingFunctions
+      |- cl_APPLE_clut
+      |- cl_APPLE_query_kernel_names
+      |- cl_APPLE_gl_sharing
+      |- cl_khr_gl_event
+      |- cl_khr_fp64
+      |- cl_khr_global_int32_base_atomics
+      |- cl_khr_global_int32_extended_atomics
+      |- cl_khr_local_int32_base_atomics
+      |- cl_khr_local_int32_extended_atomics
+      |- cl_khr_byte_addressable_store
+      |- cl_khr_int64_base_atomics
+      |- cl_khr_int64_extended_atomics
+      |- cl_khr_3d_image_writes
+      |- cl_khr_image2d_from_buffer
+      |- cl_APPLE_fp64_basic_ops
+      |- cl_APPLE_fixed_alpha_channel_orders
+      |- cl_APPLE_biased_fixed_point_image_formats
+      |- cl_APPLE_command_queue_priority
+|- [0:1] GPU / Intel(R) Iris(TM) Graphics 6100
+   |- Max Compute Units: 48
+   |- Max Global Memory Size: 1536MB
+   |- Max Local Memory Size: 64KB
+   |- Extensions:
+      |- cl_APPLE_SetMemObjectDestructor
+      |- cl_APPLE_ContextLoggingFunctions
+      |- cl_APPLE_clut
+      |- cl_APPLE_query_kernel_names
+      |- cl_APPLE_gl_sharing
+      |- cl_khr_gl_event
+      |- cl_khr_global_int32_base_atomics
+      |- cl_khr_global_int32_extended_atomics
+      |- cl_khr_local_int32_base_atomics
+      |- cl_khr_local_int32_extended_atomics
+      |- cl_khr_byte_addressable_store
+      |- cl_khr_image2d_from_buffer
+      |- cl_khr_gl_depth_images
+      |- cl_khr_depth_images
+      |- cl_khr_3d_image_writes
+```
+
