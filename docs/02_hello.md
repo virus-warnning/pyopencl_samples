@@ -7,7 +7,7 @@
 ### Win10 / Intel Core i5 7200U + HD Graphics 620
 
 ```
-C:\Users\sparrow\AppData\Local\Programs\Python\Python37\lib\site-packages\pyopencl\cffi_cl.py:1521: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+... Python\Python37\lib\site-packages\pyopencl\cffi_cl.py:1521: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
   "to see more.", CompilerWarning)
 Hello! I'm work item #0.
 Hello! I'm work item #1.
