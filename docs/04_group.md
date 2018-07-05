@@ -2,6 +2,29 @@
 
 # About 04_group.py
 
+## Known Issues
+
+### clEnqueueNDRangeKernel failed: INVALID_WORK_GROUP_SIZE
+
+Work size doesn't run as expected on macOS 10.13.3 + i7 3667U.
+
+While global work size is 6, local work size accept 1 or None (NULL) only.
+
+If any other reasonable value (e.g. 2, 3, 6) is given for local work size, INVALID_WORK_GROUP_SIZE is returned.
+
+### default local work size
+
+While global work size is 6 and local work size is None (NULL), the results between CPU and GPU are different.
+
+* 6 local work size were created on Intel HD Graphics.
+* 1 local work size was created on Intel CPU.
+
+It means kernels cannot run in the same work group on Intel CPU while None (NULL) is given for local work size.
+
+So that barrier() would not work as expected.
+
+Therefore it is better to assign a specific value for local work size.
+
 ## Output
 
 ### Win10 / Intel Core i5 7200U + HD Graphics 620
