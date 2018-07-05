@@ -42,3 +42,12 @@ Results of CPU: [2. 3. 4.]
 Cannot use double.
 Results of GPU: [0. 0. 0.]
 ```
+
+### macOS 10.13.3 / Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz + Intel(R) Iris(TM) Graphics 6100
+
+```
+Cannot use double.
+Increase each item in array: [1. 2. 3.]
+Results of CPU: [2. 3. 4.]
+Results of GPU: [0. 0. 0.]
+```
