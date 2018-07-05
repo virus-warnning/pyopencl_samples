@@ -4,8 +4,14 @@
 
 ## Known Issue
 
+While get CPU name Intel Core i5 3470 on Win10, 8 reduntant spaces appear at beginning of the string.
+
 ```python
 d.get_info(cl.device_info.NAME)
+```
+
+```
+"        Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz"
 ```
 
 ## Output
