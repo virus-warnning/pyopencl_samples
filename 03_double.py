@@ -41,7 +41,7 @@ def cl_inc_doubles(dev_type, data):
 
 def main():
     data = np.array([1.0, 2.0, 3.0])
-    print('Increase each items in array:', data)
+    print('Increase each item in array:', data)
     print('Results of CPU:', cl_inc_doubles(cl.device_type.CPU, data))
     print('Results of GPU:', cl_inc_doubles(cl.device_type.GPU, data))
 
