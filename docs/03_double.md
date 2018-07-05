@@ -2,7 +2,9 @@
 
 # About 03_double.py
 
-## Known Issus
+## Known Issue
+
+### Intel HD Graphics 3rd gen doesn't have cl_khr_fp64 extension.
 
 Intel HD Graphics 3rd gen doesn't have cl_khr_fp64 extension, so type **double** isn't available.
 
