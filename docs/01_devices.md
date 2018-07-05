@@ -4,7 +4,7 @@
 
 ## Known Issue
 
-While get CPU name Intel Core i5 3470 on Win10, 8 reduntant spaces appear at beginning of the string.
+While get device name of Intel Core i5 3470 on Win10, 8 reduntant spaces appear at beginning of the string.
 
 ```python
 d.get_info(cl.device_info.NAME)
