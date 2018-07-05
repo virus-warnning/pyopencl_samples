@@ -39,7 +39,7 @@ OS | OpenCL | Device
 ---- | ---- | ----
 Windows 10 | 2.1 | Intel Core i5 7200U + HD Graphics 620
 Windows 10 | 1.2 | Intel Core i5 3470 + HD Graphics 2500
-macOS 10.13.3 | 1.2 | Intel Core i7 3667U + HD Graphics 4000
+macOS 10.13.3 | 1.2 (deprecated) | Intel Core i7 3667U + HD Graphics 4000
 
 If you'd like to share test result on device not listed here, just edit *.md files and give me a PR.
 
