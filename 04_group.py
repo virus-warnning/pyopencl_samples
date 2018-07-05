@@ -13,7 +13,8 @@ def group_test(dev_type, gw_size, lw_size):
 
     type_name = cl.device_type.to_string(dev_type)
     lw_name = 'undefined' if lw_size == 0 else lw_size
-    print('===== (device: {}, global work size: {}, local work size: {}) ====='.format(type_name, gw_size, lw_name))
+    msg = '===== (device: {}, global work size: {}, local work size: {}) ====='.format(type_name, gw_size, lw_name)
+    print(msg, flush=True)
 
     plf = [(cl.context_properties.PLATFORM, cl.get_platforms()[0])]
     ctx = cl.Context(dev_type=dev_type, properties=plf)
@@ -29,7 +30,7 @@ def group_test(dev_type, gw_size, lw_size):
     try:
         prg.group_test(queue, GLOBAL_SIZE, LOCAL_SIZE)
     except cl.cffi_cl.LogicError as ex:
-        print(ex)
+        print(ex, flush=True)
     finally:
         queue.finish()
 

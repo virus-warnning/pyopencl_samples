@@ -36,25 +36,25 @@ def barrier_test(dev_type):
 
     ITEM_COUNT = 100
     temp = cl.LocalMemory(ITEM_COUNT * 4)
-    print('* Run without barrier:')
+    print('* Run without barrier:', flush=True)
     try:
         prg.barrier_test(queue, (ITEM_COUNT,), (ITEM_COUNT,), temp, np.int32(0))
     except cl.cffi_cl.LogicError as ex:
-        print(ex)
+        print(ex, flush=True)
     finally:
         queue.finish()
-    print('* Run with barrier:')
+    print('* Run with barrier:', flush=True)
     try:
         prg.barrier_test(queue, (ITEM_COUNT,), (ITEM_COUNT,), temp, np.int32(1))
     except cl.cffi_cl.LogicError as ex:
-        print(ex)
+        print(ex, flush=True)
     finally:
         queue.finish()
 
 def main():
-    print('=== Test GPU ===')
+    print('=== Test GPU ===', flush=True)
     barrier_test(cl.device_type.GPU)
-    print('=== Test CPU ===')
+    print('=== Test CPU ===', flush=True)
     barrier_test(cl.device_type.CPU)
 
 if __name__ == '__main__':
