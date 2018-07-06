@@ -9,9 +9,11 @@
 3 | Examine whether the device support double precision. | [View](docs/03_double.md)
 4 | Work group. | [View](docs/04_group.md)
 5 | Synchronize work items in a work group. | [View](docs/05_barrier.md)
-6 | Do a merge sort and print it's progress. |
-7 | Compare merge sort by CPU, merge sort by GPU and Python built-in sorted(). |
-8 | Convert a PNG to gray level. |
+6 | Pass kernel arguments with different address spaces. |
+7 | printf() |
+8 | Do a merge sort and print it's progress. |
+9 | Compare merge sort by CPU, merge sort by GPU and Python built-in sorted(). |
+10 | Convert a PNG to gray level. |
 
 ## Requirements
 
