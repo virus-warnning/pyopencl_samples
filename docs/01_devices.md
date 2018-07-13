@@ -150,14 +150,15 @@ d.get_info(cl.device_info.NAME).strip()
 ### macOS 10.13.3 / Intel Core i7-3667U + HD Graphics 4000
 
 ```
-[0] Apple / OpenCL 1.2 (Oct 31 2017 18:30:00)
+[0] Apple / OpenCL 1.2 (May 24 2018 20:07:03)
 |- [0:0] CPU / Intel(R) Core(TM) i7-3667U CPU @ 2.00GHz
    |- Max Compute Units: 4
-   |- Max Global Memory Size: 8192MB
-   |- Max Local Memory Size: 32KB
    |- Max Work Group Size: 1024
    |- Max Work Item Dimensions: 3
    |- Max Work Item Size: [1024, 1, 1]
+   |- Max Local Memory Size: 32KB
+   |- Max Global Memory Size: 8192MB
+   |- Max Clock Frequency: 2000MHz
    |- Extensions: 
       |- cl_APPLE_SetMemObjectDestructor
       |- cl_APPLE_ContextLoggingFunctions
@@ -181,11 +182,12 @@ d.get_info(cl.device_info.NAME).strip()
       |- cl_APPLE_command_queue_priority
 |- [0:1] GPU / HD Graphics 4000
    |- Max Compute Units: 16
-   |- Max Global Memory Size: 1536MB
-   |- Max Local Memory Size: 64KB
    |- Max Work Group Size: 512
    |- Max Work Item Dimensions: 3
    |- Max Work Item Size: [512, 512, 512]
+   |- Max Local Memory Size: 64KB
+   |- Max Global Memory Size: 1536MB
+   |- Max Clock Frequency: 1150MHz
    |- Extensions: 
       |- cl_APPLE_SetMemObjectDestructor
       |- cl_APPLE_ContextLoggingFunctions
