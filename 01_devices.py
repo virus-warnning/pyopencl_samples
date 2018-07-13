@@ -22,6 +22,12 @@ def main():
             print('   |- Max Global Memory Size: {}MB'.format(d_gmsz >> 20))
             d_lmsz = d.get_info(cl.device_info.LOCAL_MEM_SIZE)
             print('   |- Max Local Memory Size: {}KB'.format(d_lmsz >> 10))
+            d_wgsz = d.get_info(cl.device_info.MAX_WORK_GROUP_SIZE)
+            print('   |- Max Work Group Size: {}'.format(d_wgsz))
+            d_widm = d.get_info(cl.device_info.MAX_WORK_ITEM_DIMENSIONS)
+            print('   |- Max Work Item Dimensions: {}'.format(d_widm))
+            d_wisz = d.get_info(cl.device_info.MAX_WORK_ITEM_SIZES)
+            print('   |- Max Work Item Size: {}'.format(d_wisz))
 
             # List extensions.
             print('   |- Extensions: ')
