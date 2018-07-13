@@ -56,7 +56,7 @@ Change LOCAL_WORK_SIZE to (2, 1, 1), then ...
 clEnqueueNDRangeKernel failed: INVALID_WORK_GROUP_SIZE
 ```
 
-At this time, remove **printf("");** in CL_CODE, then ...
+At this time, remove **printf("")** in CL_CODE, then ...
 
 ```
 It works!
@@ -64,7 +64,7 @@ It works!
 
 It seems local work size cannot > 1 with **printf("");**.
 
-Without **printf("");**, change LOCAL_WORK_SIZE to (128, 1, 1), then ...
+Without **printf("")**, change LOCAL_WORK_SIZE to (128, 1, 1), then ...
 
 ```
 It works!
