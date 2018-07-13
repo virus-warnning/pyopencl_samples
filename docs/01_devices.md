@@ -99,6 +99,9 @@ d.get_info(cl.device_info.NAME).strip()
    |- Max Compute Units: 4
    |- Max Global Memory Size: 16064MB
    |- Max Local Memory Size: 32KB
+   |- Max Work Group Size: 1024
+   |- Max Work Item Dimensions: 3
+   |- Max Work Item Size: [1024, 1024, 1024]
    |- Extensions:
       |- cl_khr_fp64
       |- cl_khr_icd
@@ -118,6 +121,9 @@ d.get_info(cl.device_info.NAME).strip()
    |- Max Compute Units: 6
    |- Max Global Memory Size: 1246MB
    |- Max Local Memory Size: 64KB
+   |- Max Work Group Size: 256
+   |- Max Work Item Dimensions: 3
+   |- Max Work Item Size: [256, 256, 256]
    |- Extensions:
       |- cl_intel_d3d11_nv12_media_sharing
       |- cl_intel_dx9_media_sharing
@@ -149,6 +155,9 @@ d.get_info(cl.device_info.NAME).strip()
    |- Max Compute Units: 4
    |- Max Global Memory Size: 8192MB
    |- Max Local Memory Size: 32KB
+   |- Max Work Group Size: 1024
+   |- Max Work Item Dimensions: 3
+   |- Max Work Item Size: [1024, 1, 1]
    |- Extensions: 
       |- cl_APPLE_SetMemObjectDestructor
       |- cl_APPLE_ContextLoggingFunctions
@@ -174,6 +183,9 @@ d.get_info(cl.device_info.NAME).strip()
    |- Max Compute Units: 16
    |- Max Global Memory Size: 1536MB
    |- Max Local Memory Size: 64KB
+   |- Max Work Group Size: 512
+   |- Max Work Item Dimensions: 3
+   |- Max Work Item Size: [512, 512, 512]
    |- Extensions: 
       |- cl_APPLE_SetMemObjectDestructor
       |- cl_APPLE_ContextLoggingFunctions
