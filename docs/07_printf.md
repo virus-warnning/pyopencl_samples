@@ -91,3 +91,42 @@ host char[6]: 'T' 54
 host char[7]: 'R' 52
 Segmentation fault: 11
 ```
+
+### macOS 10.13.3 / Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz + Intel(R) Iris(TM) Graphics 6100
+```
+         int:    5
+        long:    5
+       float: 5.50
+        char:    A
+      string:  ABC
+      size_t:   10
+   int + int:    5    5
+  long + int:    5    5
+size_t + int:   10    5
+host char[0]: 'H' 48
+host char[1]: 'O' 4f
+host char[2]: 'S' 53
+host char[3]: 'T' 54
+host char[4]: ' ' 20
+host char[5]: 'S' 53
+host char[6]: 'T' 54
+host char[7]: 'R' 52
+ host string: HOST STR
+         int:    5
+        long:    5
+       float: 5.50
+        char:    A
+      string:  ABC
+      size_t:   10
+   int + int:    5    5
+  long + int:    5    5
+size_t + int:   10    5
+host char[0]: 'H' 48
+host char[1]: 'O' 4f
+host char[2]: 'S' 53
+host char[3]: 'T' 54
+host char[4]: ' ' 20
+host char[5]: 'S' 53
+host char[6]: 'T' 54
+host char[7]: 'R' 52
+```

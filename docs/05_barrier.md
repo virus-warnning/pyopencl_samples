@@ -56,13 +56,12 @@ clEnqueueNDRangeKernel failed: INVALID_WORK_GROUP_SIZE
 ### macOS 10.13.3 / Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz + Intel(R) Iris(TM) Graphics 6100
 
 ```
-sum[0..100]=4950
-=== Test GPU ===
-* Run without barrier:
-* Run with barrier:
-=== Test CPU ===
-* Run without barrier:
+=== Test barrier() on GPU ===
+* Run without barrier():
+sum[0 ~ 100]=4950
+=== Test barrier() on CPU ===
+* Run without barrier():
 clEnqueueNDRangeKernel failed: INVALID_WORK_GROUP_SIZE
-* Run with barrier:
+* Run with barrier():
 clEnqueueNDRangeKernel failed: INVALID_WORK_GROUP_SIZE
 ```
