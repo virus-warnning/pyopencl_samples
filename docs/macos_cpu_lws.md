@@ -91,4 +91,4 @@ To use OpenCL on macOS + CPU.
 * Do not use **printf()** while local work size > 1.
 * The maximum local work size is (128, 1, 1).
 * The 2nd and 3rd dimentions of local work size are useless.
-* OpenCL was deprecated, See: [What’s New in macOS 10.14](https://developer.apple.com/macos/whats-new/).
+* OpenCL was deprecated, see: [What’s New in macOS 10.14](https://developer.apple.com/macos/whats-new/).
