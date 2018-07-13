@@ -97,11 +97,12 @@ d.get_info(cl.device_info.NAME).strip()
 [0] Intel(R) OpenCL / OpenCL 1.2
 |- [0:0] CPU / Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
    |- Max Compute Units: 4
-   |- Max Global Memory Size: 16064MB
-   |- Max Local Memory Size: 32KB
    |- Max Work Group Size: 1024
    |- Max Work Item Dimensions: 3
    |- Max Work Item Size: [1024, 1024, 1024]
+   |- Max Local Memory Size: 32KB
+   |- Max Global Memory Size: 16064MB
+   |- Max Clock Frequency: 3200MHz
    |- Extensions:
       |- cl_khr_fp64
       |- cl_khr_icd
@@ -119,11 +120,12 @@ d.get_info(cl.device_info.NAME).strip()
       |- cl_khr_d3d11_sharing
 |- [0:1] GPU / Intel(R) HD Graphics 2500
    |- Max Compute Units: 6
-   |- Max Global Memory Size: 1246MB
-   |- Max Local Memory Size: 64KB
    |- Max Work Group Size: 256
    |- Max Work Item Dimensions: 3
    |- Max Work Item Size: [256, 256, 256]
+   |- Max Local Memory Size: 64KB
+   |- Max Global Memory Size: 1246MB
+   |- Max Clock Frequency: 1100MHz
    |- Extensions:
       |- cl_intel_d3d11_nv12_media_sharing
       |- cl_intel_dx9_media_sharing
