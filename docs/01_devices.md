@@ -28,8 +28,12 @@ d.get_info(cl.device_info.NAME).strip()
 [0] Intel(R) OpenCL / OpenCL 2.1
 |- [0:0] GPU / Intel(R) HD Graphics 620
    |- Max Compute Units: 24
-   |- Max Global Memory Size: 6512MB
+   |- Max Work Group Size: 256
+   |- Max Work Item Dimensions: 3
+   |- Max Work Item Size: [256, 256, 256]
    |- Max Local Memory Size: 64KB
+   |- Max Global Memory Size: 6512MB
+   |- Max Clock Frequency: 1000MHz
    |- Extensions:
       |- cl_intel_accelerator
       |- cl_intel_advanced_motion_estimation
@@ -70,8 +74,12 @@ d.get_info(cl.device_info.NAME).strip()
       |- cl_khr_throttle_hints
 |- [0:1] CPU / Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
    |- Max Compute Units: 4
-   |- Max Global Memory Size: 16302MB
+   |- Max Work Group Size: 8192
+   |- Max Work Item Dimensions: 3
+   |- Max Work Item Size: [8192, 8192, 8192]
    |- Max Local Memory Size: 32KB
+   |- Max Global Memory Size: 16302MB
+   |- Max Clock Frequency: 2500MHz
    |- Extensions:
       |- cl_khr_icd
       |- cl_khr_global_int32_base_atomics
