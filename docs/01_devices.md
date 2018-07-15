@@ -169,7 +169,7 @@ d.get_info(cl.device_info.NAME).strip()
    |- Max Local Memory Size: 32KB
    |- Max Global Memory Size: 8192MB
    |- Max Clock Frequency: 2000MHz
-   |- Extensions: 
+   |- Extensions:
       |- cl_APPLE_SetMemObjectDestructor
       |- cl_APPLE_ContextLoggingFunctions
       |- cl_APPLE_clut
@@ -198,7 +198,7 @@ d.get_info(cl.device_info.NAME).strip()
    |- Max Local Memory Size: 64KB
    |- Max Global Memory Size: 1536MB
    |- Max Clock Frequency: 1150MHz
-   |- Extensions: 
+   |- Extensions:
       |- cl_APPLE_SetMemObjectDestructor
       |- cl_APPLE_ContextLoggingFunctions
       |- cl_APPLE_clut
@@ -222,8 +222,12 @@ d.get_info(cl.device_info.NAME).strip()
 [0] Apple / OpenCL 1.2 (Oct 31 2017 18:30:00)
 |- [0:0] CPU / Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz
    |- Max Compute Units: 4
-   |- Max Global Memory Size: 8192MB
+   |- Max Work Group Size: 1024
+   |- Max Work Item Dimensions: 3
+   |- Max Work Item Size: [1024, 1, 1]
    |- Max Local Memory Size: 32KB
+   |- Max Global Memory Size: 8192MB
+   |- Max Clock Frequency: 2700MHz
    |- Extensions:
       |- cl_APPLE_SetMemObjectDestructor
       |- cl_APPLE_ContextLoggingFunctions
@@ -247,8 +251,12 @@ d.get_info(cl.device_info.NAME).strip()
       |- cl_APPLE_command_queue_priority
 |- [0:1] GPU / Intel(R) Iris(TM) Graphics 6100
    |- Max Compute Units: 48
-   |- Max Global Memory Size: 1536MB
+   |- Max Work Group Size: 256
+   |- Max Work Item Dimensions: 3
+   |- Max Work Item Size: [256, 256, 256]
    |- Max Local Memory Size: 64KB
+   |- Max Global Memory Size: 1536MB
+   |- Max Clock Frequency: 1050MHz
    |- Extensions:
       |- cl_APPLE_SetMemObjectDestructor
       |- cl_APPLE_ContextLoggingFunctions
@@ -266,4 +274,3 @@ d.get_info(cl.device_info.NAME).strip()
       |- cl_khr_depth_images
       |- cl_khr_3d_image_writes
 ```
-
